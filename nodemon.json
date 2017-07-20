@@ -1,0 +1,8 @@
+{
+  "verbose": true,
+  "delay": "500",
+  "ext": "*.js,*.json",
+  "ignore": [
+    "src/client"
+  ]
+}
