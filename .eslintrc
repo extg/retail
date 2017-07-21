@@ -1,0 +1,146 @@
+{
+  "parser": "babel-eslint",
+
+  "plugins": [
+    "react"
+  ],
+
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true,
+    "es6": true
+  },
+
+  "parserOptions": {
+    "ecmaFeatures": {
+      "arrowFunctions": true,
+      "blockBindings": true,
+      "classes": true,
+      "defaultParams": true,
+      "destructuring": true,
+      "forOf": true,
+      "generators": false,
+      "modules": true,
+      "objectLiteralComputedProperties": true,
+      "objectLiteralDuplicateProperties": false,
+      "objectLiteralShorthandMethods": true,
+      "objectLiteralShorthandProperties": true,
+      "restParams": true,
+      "spread": true,
+      "superInFunctions": true,
+      "templateStrings": true,
+      "jsx": true
+    }
+  },
+
+  "rules": {
+    "indent": ["error", 4, {"SwitchCase": 1}],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "curly": ["error", "all"],
+    "space-before-blocks": ["error", "always"],
+    "space-before-function-paren": ["error", {"anonymous": "always", "named": "never"}],
+    "spaced-comment": ["error", "always"],
+    "space-unary-ops": ["error"],
+    "keyword-spacing": ["error", {"before": true, "after": true}],
+    "space-infix-ops": ["error"],
+    "space-in-parens": ["error", "never"],
+    "no-with": ["error"],
+    "one-var": ["error", "never"],
+    "no-empty": ["error"],
+    "wrap-iife": ["error", "any"],
+    "comma-spacing": ["error", {"before": false, "after": true}],
+    "comma-style": ["error", "last"],
+    "no-multi-str": ["error"],
+    "yoda": ["error", "never"],
+    "array-bracket-spacing": ["error", "never"],
+    "dot-notation": ["error"],
+    "key-spacing": ["error"],
+    "object-curly-spacing": ["error", "never"],
+    "quote-props": ["error", "as-needed"],
+    "max-len": ["error", {"ignoreUrls": true, "code": 120}],
+    "no-trailing-spaces": ["error"],
+    "brace-style": ["error", "1tbs", {"allowSingleLine": true}],
+    "id-match": ["error", "^[\x00-\x7F]+$"],
+
+    "no-console": ["error"],
+    "no-constant-condition": ["error"],
+    "no-control-regex": ["error"],
+    "no-debugger": ["error"],
+    "no-dupe-args": ["error"],
+    "no-dupe-keys": ["error"],
+    "no-duplicate-case": ["error"],
+    "no-empty-character-class": ["error"],
+    "no-ex-assign": ["error"],
+    "no-extra-boolean-cast": ["error"],
+    "no-extra-semi": ["error"],
+    "no-func-assign": ["error"],
+    "no-inner-declarations": ["error"],
+    "no-invalid-regexp": ["error"],
+    "no-irregular-whitespace": ["error"],
+    "no-negated-in-lhs": ["error"],
+    "no-obj-calls": ["error"],
+    "no-regex-spaces": ["error"],
+    "no-sparse-arrays": ["error"],
+    "no-unexpected-multiline": ["error"],
+    "no-unreachable": ["error"],
+    "no-unsafe-finally": ["error"],
+    "use-isnan": ["error"],
+    "valid-typeof": ["error"],
+    "no-caller": ["error"],
+    "eol-last": ["error"],
+    "newline-per-chained-call": ["error", {"ignoreChainWithDepth": 2}],
+    "no-unused-vars": ["error", {"args": "none"}],
+    "no-undef": ["error"],
+
+    // React
+    "react/jsx-boolean-value": 2,
+    "react/jsx-closing-bracket-location": 2,
+    "react/jsx-curly-spacing":  [2, "never"],
+    "react/jsx-handler-names": 2,
+    "react/jsx-indent-props": [2, 2],
+    "react/jsx-indent": [2, 4],
+    "react/jsx-key": 2,
+    "react/jsx-max-props-per-line": [2, {maximum: 3}],
+    "react/jsx-no-bind": [2, {
+      "ignoreRefs": true,
+      "allowBind": true,
+      "allowArrowFunctions": true
+    }],
+    "react/jsx-no-duplicate-props": 2,
+    "react/jsx-no-undef": 2,
+    "react/jsx-pascal-case": 2,
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/no-danger": 2,
+    "react/no-deprecated": 2,
+    "react/no-did-mount-set-state": 0,
+    "react/no-did-update-set-state": 0,
+    "react/no-direct-mutation-state": 2,
+    "react/no-is-mounted": 2,
+    "react/no-multi-comp": 2,
+    "react/no-string-refs": 2,
+    "react/no-unknown-property": 2,
+    "react/prefer-es6-class": 2,
+    "react/prop-types": 2,
+    "react/react-in-jsx-scope": 2,
+    "react/self-closing-comp": 2,
+    "react/sort-comp": [2, {
+      "order": [
+        "lifecycle",
+        "/^handle.+$/",
+        "/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/",
+        "everything-else",
+        "/^render.+$/",
+        "render"
+      ]
+    }],
+    "react/jsx-wrap-multilines": 2
+  },
+
+  "globals":{
+    "$": true
+  }
+}

@@ -5,6 +5,8 @@ git clone https://github.com/extg/retail && cd retail
 ```
 
 ```bash
+cp .env.example .env
+
 yarn && yarn server
 ```
 
@@ -16,7 +18,6 @@ yarn && yarn server
 
 ## TODO
 
-* [eslint] + [eslint-loader] (warrnings при сборке)
 * [husky] + [prettier] (warrnings при сборке)
 * [stylelint]
 * SSR (isomorphic) [react-isomorphic-starterkit]

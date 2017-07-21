@@ -1,5 +1,5 @@
-import React from 'react'
+import React from 'react';
 
-const PageIndex = () => <div>Hello, Retail!</div>
+const PageIndex = () => <div>Hello, Retail!</div>;
 
-export default PageIndex
+export default PageIndex;
