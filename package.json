@@ -6,8 +6,9 @@
   "author": "Vasily Krylov <0777144@gmail.com> & Leisan Gilfanova <allarepossible@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "precommit": "npm test",
-    "server": "nodemon server.js",
+    "precommit": "eslint --cache --fix ./src",
+    "start": "node server.js",
+    "server": "nodemon --quiet server.js --exec 'eslint --cache ./src/server & node'",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "dependencies": {
