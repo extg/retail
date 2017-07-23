@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "repository": "https://github.com/extg/retail",
-  "author": "Vasily Krylov <0777144@gmail.com> & leisan",
+  "author": "Vasily Krylov <0777144@gmail.com> & Leisan Gilfanova <allarepossible@gmail.com>",
   "license": "MIT",
   "scripts": {
     "server": "nodemon server.js",

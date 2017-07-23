@@ -9,7 +9,7 @@ import postcssLoader from './postcss-loader';
 const rootPath = path.resolve(process.cwd());
 const distPath = path.join(rootPath, 'public', 'dist');
 const clientPath = path.join(rootPath, 'src', 'client');
-const publicPath = '/dist/'
+const publicPath = '/dist/';
 
 export default {
   cache: true,
@@ -47,7 +47,7 @@ export default {
   module: {
     rules: [
       {
-        enforce: "pre",
+        enforce: 'pre',
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'eslint-loader',
@@ -131,9 +131,9 @@ export default {
         ),
       ],
     }),
-    function() {
+    function () {
       // I want to see time of latest build!
       this.plugin('done', () => console.log('Build ended:', moment().format('HH:mm:ss')));
     },
   ]
-}
+};

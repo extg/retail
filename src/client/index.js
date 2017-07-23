@@ -12,20 +12,20 @@ const store = configureStore();
 const rootEl = document.getElementById('root');
 
 const renderApp = () =>
-    ReactDOM.render(
-        <Provider store={store}>
-            <ConnectedRouter history={history}>
-                <AppContainer>
-                    <App/>
-                </AppContainer>
-            </ConnectedRouter>
-        </Provider>,
-        rootEl
-    );
+  ReactDOM.render(
+    <Provider store={store}>
+      <ConnectedRouter history={history}>
+        <AppContainer>
+          <App/>
+        </AppContainer>
+      </ConnectedRouter>
+    </Provider>,
+    rootEl
+  );
 
 renderApp();
 
 // Hot Module Replacement API
 if (module.hot) {
-    module.hot.accept('./components/App', renderApp);
+  module.hot.accept('./components/App', renderApp);
 }

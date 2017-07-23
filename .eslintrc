@@ -35,7 +35,7 @@
   },
 
   "rules": {
-    "indent": ["error", 4, {"SwitchCase": 1}],
+    "indent": ["error", 2, {"SwitchCase": 1}],
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
@@ -65,7 +65,7 @@
     "brace-style": ["error", "1tbs", {"allowSingleLine": true}],
     "id-match": ["error", "^[\x00-\x7F]+$"],
 
-    "no-console": ["error"],
+    "no-console": ["warn"],
     "no-constant-condition": ["error"],
     "no-control-regex": ["error"],
     "no-debugger": ["error"],
@@ -101,7 +101,7 @@
     "react/jsx-curly-spacing":  [2, "never"],
     "react/jsx-handler-names": 2,
     "react/jsx-indent-props": [2, 2],
-    "react/jsx-indent": [2, 4],
+    "react/jsx-indent": [2, 2],
     "react/jsx-key": 2,
     "react/jsx-max-props-per-line": [2, {maximum: 3}],
     "react/jsx-no-bind": [2, {
