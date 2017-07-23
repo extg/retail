@@ -1,15 +1,15 @@
-import path from 'path'
-import webpack from 'webpack'
-import moment from 'moment'
-import AutoDllPlugin from 'autodll-webpack-plugin'
+import path from 'path';
+import webpack from 'webpack';
+import moment from 'moment';
+import AutoDllPlugin from 'autodll-webpack-plugin';
 
-import cssLoader from './css-loader'
-import postcssLoader from './postcss-loader'
+import cssLoader from './css-loader';
+import postcssLoader from './postcss-loader';
 
-const rootPath = path.resolve(process.cwd())
-const distPath = path.join(rootPath, 'public', 'dist')
-const clientPath = path.join(rootPath, 'src', 'client')
-const publicPath = '/dist/'
+const rootPath = path.resolve(process.cwd());
+const distPath = path.join(rootPath, 'public', 'dist');
+const clientPath = path.join(rootPath, 'src', 'client');
+const publicPath = '/dist/';
 
 export default {
   cache: true,
@@ -46,6 +46,15 @@ export default {
 
   module: {
     rules: [
+      {
+        enforce: 'pre',
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+        options: {
+          emitError: true,
+        }
+      },
       {
         test: /\.js?$/,
         include: [
@@ -122,9 +131,9 @@ export default {
         ),
       ],
     }),
-    function() {
+    function () {
       // I want to see time of latest build!
       this.plugin('done', () => console.log('Build ended:', moment().format('HH:mm:ss')));
     },
   ]
-}
+};

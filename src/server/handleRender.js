@@ -1,18 +1,18 @@
-import React from 'react'
-import {renderToString} from 'react-dom/server'
+import React from 'react';
+import {renderToString} from 'react-dom/server';
 
 function handleRender(req, res) {
   // Render the component to a string
   const html = renderToString(
     <div>Loading...</div>
-  )
+  );
 
-  // Grab the initial state from our Redux store
-  // const preloadedState = store.getState()
-  const preloadedState = {}
+    // Grab the initial state from our Redux store
+    // const preloadedState = store.getState()
+  const preloadedState = {};
 
   // Send the rendered page back to the client
-  res.send(renderFullPage(html, preloadedState))
+  res.send(renderFullPage(html, preloadedState));
 }
 
 function renderFullPage(html, preloadedState) {
@@ -20,17 +20,18 @@ function renderFullPage(html, preloadedState) {
     <!doctype html lang="ru">
     <html>
     <head>
-        <meta charset="utf-8">
-        <title>Proto</title>
+      <meta charset="utf-8">
+      <title>Proto</title>
     
-        <meta name="description" content="React boilerplate">
-        <meta name="author" content="tor <0777144@gmail.com>">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="React boilerplate">
+      <meta name="author" content="tor <0777144@gmail.com>">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     
         <!--TODO: разобраться что и зачем -->
         <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
         <!--<meta http-equiv="content-type" content="text/html; charset=utf-8">-->
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, 
+        minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
         <!--<meta name="MobileOptimized" content="176">-->
         <!--<meta name="HandheldFriendly" content="True">-->
         <!--<base id="base">-->
@@ -51,7 +52,7 @@ function renderFullPage(html, preloadedState) {
         <script src="/dist/vendor.dll.js"></script>
         <script src="/dist/app.bundle.js"></script>
     </body>
-    </html>`
+    </html>`;
 }
 
-export default handleRender
+export default handleRender;
