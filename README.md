@@ -39,9 +39,11 @@ yarn && yarn server
   * Smth else?
 * оптимизация сборки https://survivejs.com/webpack/optimizing/performance/
 * авторизация https://vladimirponomarev.com/blog/authentication-in-react-apps-jwt
+* zero-downtime deploy
+* [Dont-use-nodemon-there-are-better-ways] maybe?
 
 
-
+[Dont-use-nodemon-there-are-better-ways]: https://medium.com/@kevinsimper/dont-use-nodemon-there-are-better-ways-fc016b50b45e
 [CSS Modules]: https://github.com/webpack-contrib/css-loader#css-modules
 [webpack clean plugin]: https://github.com/johnagan/clean-webpack-plugin
 [styled-jss]: https://github.com/cssinjs/styled-jss
