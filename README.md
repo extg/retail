@@ -19,6 +19,7 @@ yarn && yarn server
 ## TODO
 
 * [husky] + [prettier] (warrnings при сборке)
+* eslint на сервере
 * [stylelint]
 * SSR (isomorphic) [react-isomorphic-starterkit]
 * CSS
@@ -38,6 +39,7 @@ yarn && yarn server
   * Smth else?
 * оптимизация сборки https://survivejs.com/webpack/optimizing/performance/
 * авторизация https://vladimirponomarev.com/blog/authentication-in-react-apps-jwt
+
 
 
 [CSS Modules]: https://github.com/webpack-contrib/css-loader#css-modules
