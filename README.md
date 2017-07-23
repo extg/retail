@@ -32,6 +32,10 @@ yarn && yarn server
     * [jss]
     * [react-css-modules]
     * [recompose] [why-the-hipsters-recompose-everything]
+* Иконки.
+  * Что лучше иконочный шрифт или svg напрямую в страницу инлайнить
+  * [fontgen-loader]
+  * Smth else?
 * оптимизация сборки https://survivejs.com/webpack/optimizing/performance/
 * авторизация https://vladimirponomarev.com/blog/authentication-in-react-apps-jwt
 
@@ -53,3 +57,4 @@ yarn && yarn server
 [eslint]: http://eslint.org/
 [eslint-loader]: https://github.com/MoOx/eslint-loader
 [stylelint]: https://github.com/stylelint/stylelint
+[fontgen-loader]: https://github.com/DragonsInn/fontgen-loader
