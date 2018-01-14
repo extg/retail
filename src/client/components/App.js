@@ -4,11 +4,11 @@ import {Route} from 'react-router';
 import 'styles/reset.css';
 import 'styles/main.css';
 
-import PageIndex from '../pages/PageIndex';
+import CatalogPage from '../pages/CatalogPage';
 
 const App = () => (
   <div>
-    <Route path="/" component={PageIndex}/>
+    <Route path="/" component={CatalogPage}/>
   </div>
 );
 

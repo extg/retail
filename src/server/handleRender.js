@@ -1,15 +1,17 @@
 import React from 'react';
 import {renderToString} from 'react-dom/server';
+import store from './store';
+
 
 function handleRender(req, res) {
   // Render the component to a string
   const html = renderToString(
-    <div>Loading...</div>
+    <div id="loading">Loading...</div>
   );
 
     // Grab the initial state from our Redux store
     // const preloadedState = store.getState()
-  const preloadedState = {};
+  const preloadedState = store;
 
   // Send the rendered page back to the client
   res.send(renderFullPage(html, preloadedState));
@@ -17,11 +19,11 @@ function handleRender(req, res) {
 
 function renderFullPage(html, preloadedState) {
   return `
-    <!doctype html lang="ru">
+    <!doctype html>
     <html>
     <head>
       <meta charset="utf-8">
-      <title>Proto</title>
+      <title>Retail</title>
     
       <meta name="description" content="React boilerplate">
       <meta name="author" content="tor <0777144@gmail.com>">
